@@ -5,28 +5,57 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function loadClubs() {
-  // Yaha apna data directly likh do
+  fetch("data/clubs.json")
+    .then(res => res.json())
+    .then(clubs => {
+      const container = document.getElementById("club-list");
+      clubs.forEach(club => {
+        container.innerHTML += `
+          <div class="card club-card">
 
-const clubs = [
-  { name: "Coding Club", desc: "Learn programming and build projects" },
-  { name: "Robotics Club", desc: "Make robots and circuits" }
-];
+            <img src="${club.image}" alt="${club.name}" />
+            <h3>${club.name}</h3>
+            <p>${club.description}</p>
+            <p><strong>Contact:</strong> ${club.contact}</p>
+          </div>
+        `;
+      });
+    });
+}
 
-const events = [
-  { title: "Hackathon 2025", date: "12 Sept 2025", desc: "24-hour coding event" },
-  { title: "Robotics Workshop", date: "20 Sept 2025", desc: "Hands-on robot building" }
-];
+function loadEvents() {
+  fetch("data/events.json")
+    .then(res => res.json())
+    .then(events => {
+      const container = document.getElementById("event-list");
+      events.forEach(event => {
+        container.innerHTML += `
+          <div class="card event-card">
 
-// Ab yeh data HTML me show karenge
+            <img src="${event.poster}" alt="${event.title}" />
+            <h3>${event.title}</h3>
+            <p><strong>Club:</strong> ${event.club}</p>
+            <p><strong>Date:</strong> ${event.date}</p>
+            <p><strong>Venue:</strong> ${event.venue}</p>
+            <a href="${event.registerLink}" target="_blank">Register</a>
+          </div>
+        `;
+      });
+    });
+}
+document.getElementById("searchInput").addEventListener("input", function () {
+  const searchValue = this.value.toLowerCase();
 
-document.addEventListener("DOMContentLoaded", () => {
-  let clubsDiv = document.getElementById("clubs-container");
-  clubs.forEach(c => {
-    clubsDiv.innerHTML += `<h3>${c.name}</h3><p>${c.desc}</p><hr>`;
+  const clubCards = document.querySelectorAll(".club-card");
+  clubCards.forEach((card) => {
+    const title = card.querySelector("h3").textContent.toLowerCase();
+    card.style.display = title.includes(searchValue) ? "block" : "none";
   });
 
-  let eventsDiv = document.getElementById("events-container");
-  events.forEach(e => {
-    eventsDiv.innerHTML += `<h4>${e.title}</h4><p>${e.date}</p><p>${e.desc}</p><hr>`;
+  const eventCards = document.querySelectorAll(".event-card");
+  eventCards.forEach((card) => {
+    const title = card.querySelector("h3").textContent.toLowerCase();
+    card.style.display = title.includes(searchValue) ? "block" : "none";
   });
 });
+
