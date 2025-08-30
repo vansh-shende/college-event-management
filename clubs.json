@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Google Developers Group (GDG)",
+    "description": "We build cool tech stuff and solve DSA problems.",
+    "image": "https://cdn-icons-png.flaticon.com/512/3573/3573187.png",
+    "contact": "codingclub@kitsramtek.edu"
+  },
+  {
+    "name": "Cultural Club ",
+    "description": "For the artists, actors, and storytellers of KITS.",
+    "image": "https://cdn-icons-png.flaticon.com/512/16815/16815900.png",
+    "contact": "dramaclub@kitsramtek.edu"
+  },
+
+  {
+    "name": "NSS Club ",
+    "description": "For the Students intrest in Social work",
+    "image":"https://cdn-icons-png.flaticon.com/512/12162/12162140.png",
+    "contact": "NSSclub@kitsramtek.edu"
+  },
+
+  {
+    "name": "Mathematics Club ",
+    "description": "For the Students intrest in the Maths",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe1C4hwrL0C2As6UiYW9dT_pLplN3GdJVZXw&s",
+    "contact": "Math@kitsramtek.edu"
+  },
+
+  {
+    "name": "Litetary Club ",
+    "description": "For the Students intrest in anchouring",
+    "image":"https://www.nbkrist.co.in/Clubs/index.jpg",
+    "contact": "Litetary@kitsramtek.edu"
+  },
+
+  {
+    "name": "ISTE ",
+    "description": "For the Students intrest in technical",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9NxiGqF13EAuwNYE2MU14JWmy4EiurBiKqg&s",
+    "contact": "Iste@kitsramtek.edu"
+  }
+
+
+
+]

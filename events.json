@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Web Dev Bootcamp",
+    "club": "Coding Club",
+    "date": "2025-08-10",
+    "venue": "Seminar Hall",
+    "poster": "https://images.credly.com/images/30e7936d-76e0-48d6-b4e4-600def2c9190/virtual-product-bundle-web-development-bootcamp-sp.png",
+    "registerLink": "https://forms.gle/sample"
+  },
+  {
+    "title": "Drama Auditions",
+    "club": "Cultural Club",
+    "date": "2025-08-12",
+    "venue": "Auditorium",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStQfyiNiuSqPutaerPavBrBX_Ql7CFnMEb5A&s",
+    "registerLink": "https://forms.gle/sample2"
+  },
+   {
+    "title": "Ganesh Utsav",
+    "club": "Cultural Club",
+    "date": "2025-08-27",
+    "venue": "Triveni Hostel",
+    "poster": "https://images.indianexpress.com/2024/09/ganesh-chaturthi-1200_20240918072101.jpg"
+    
+  },
+
+  {
+    "title": "Teachers Day",
+    "club": "Infoquest",
+    "date": "2025-09-5",
+    "venue": "Silver Jublee Hall",
+    "poster": "https://blogcdn.aakash.ac.in/wordpress_media/2022/09/Blog-Image-7.jpg"
+    
+  }
+]
