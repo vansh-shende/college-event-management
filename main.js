@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function loadClubs() {
-  fetch("data/clubs.json")
+  fetch("clubs.json")
     .then(res => res.json())
     .then(clubs => {
       const container = document.getElementById("club-list");
@@ -24,7 +24,7 @@ function loadClubs() {
 }
 
 function loadEvents() {
-  fetch("data/events.json")
+  fetch("events.json")
     .then(res => res.json())
     .then(events => {
       const container = document.getElementById("event-list");
@@ -58,4 +58,5 @@ document.getElementById("searchInput").addEventListener("input", function () {
     card.style.display = title.includes(searchValue) ? "block" : "none";
   });
 });
+
 
